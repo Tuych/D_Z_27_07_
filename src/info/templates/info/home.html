@@ -1,0 +1,10 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+{% for i in data %}
+    <div class="content">
+    <h2><a href="{% url 'detail' i.id %}" style="text-decoration: none;">{{ i.title }} </a> </h2>
+    <p>{{ i.descriptions }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}

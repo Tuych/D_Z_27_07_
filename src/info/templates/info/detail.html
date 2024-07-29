@@ -1,0 +1,9 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+<div class="content">
+    <h2>{{ info.title }} </h2>
+    <p>{{ info.descriptions }}</p>
+</div>
+<h2><a href="{% url 'home' %}" style="text-decoration: none; "> <<< Home</a></h2>
+{% endblock content %}
